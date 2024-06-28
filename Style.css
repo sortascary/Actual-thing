@@ -47,6 +47,7 @@ body{
  }
 
 .navbar-brand{
+    margin: 0 20px;
     font-size: 48px;
     font-weight: bold;
     font-style: italic;
@@ -222,6 +223,10 @@ body{
     padding: 0 100px;
 }
 
+.stuff{
+    border-right: 5px solid;
+}
+
 .text-aboutus{
     padding: 0 200px 0 200px;
     font-size: 32px;
@@ -299,6 +304,15 @@ textarea {
     font-style: normal;
   }
 
+  @media (max-width: 1650px){
+    .feature{
+        flex-direction: column;
+    }
+    .feature-stay{
+        justify-content: center;
+    }
+  }
+
   @media (max-width: 1480px) {
     #images-temp {
         display: none;
@@ -309,5 +323,19 @@ textarea {
     #visimisi{
         display: contents;
         align-items: center;
+    }
+    
+}
+@media (max-width: 1000px) {
+
+    #footer{
+        flex-direction: column;
+        height: auto;
+        background-color: #1A2130; 
+        width: auto;
+        padding: 30px;
+    }
+    .stuff{
+        border: none;
     }
 }
