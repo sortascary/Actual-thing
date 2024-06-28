@@ -1,0 +1,282 @@
+body{
+    margin: 0;
+    background-color: #E3EDA7;
+ }
+ .body-aboutus{
+    color: #383838;
+ }
+
+#navbar li {
+    list-style: none;
+    font-style: normal;
+    font-size: 32px;
+    color: black;
+    list-style: none;
+    display: inline;
+    justify-items: center;
+    padding: 0px 40px 0px 40px;
+}
+
+#navbar li:hover{
+    background-color: white;
+    cursor: pointer;
+
+}
+ a{
+    color: black;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+ }
+
+.navbar{
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDFFE2;
+    padding-top: 0px;
+    align-items: center;
+    position: relative;
+ }
+
+ .navbar-nav{
+    display: flex;
+    overflow: hidden;
+ }
+
+.navbar-brand{
+    font-size: 48px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+  }
+
+#bigimg{
+    height: 946px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center; 
+}
+
+.Hero-text{
+    margin-left: 20px;
+    font-size: 64px;
+    color: white
+}
+
+.aboutus{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+#images-temp{
+    display: block;
+    margin: 20px;
+}
+
+#images-temp:hover{
+    box-shadow: 5px 10px 30px hsla(0, 0%, 0%, 0.3);
+}
+
+.up{
+    animation: 1s ease-out 0s 1 slidefromDown;
+}
+
+@keyframes slidefromDown {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+#containervs{
+    min-height: 934px;
+    background-color: #D9D9D9;
+    text-align: center;
+    padding-top: 80px;
+}
+#visimisi{
+    display: flex;
+    justify-content: center;
+}
+
+.visi-misi {
+    background-color: #CDDE61;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px 10px 2px 2px;
+    margin: 200px 50px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 1s ease;
+    max-height: 85px; 
+    max-width: 516px;
+}
+
+.visi-misi:hover {
+    max-height: 500px; 
+}
+
+.popup {
+    opacity: 0;
+    transition: opacity 0.4s ease-in ;
+}
+
+.visi-misi:hover .popup {
+    opacity: 1;
+}
+
+.visi-misi h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.popup {
+    padding: 10px;
+}
+
+#containerfeatures{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.feature{
+    display: flex;
+    justify-content: center;
+}
+
+.feature-stay{
+    display: flex;
+}
+
+.feature-item{
+    border-style: solid;
+    border-width: 2px 10px 2px 2px;
+    background-color: #CFE350;
+    border-radius: 15px;
+    width: 320px;
+    height: 347px;
+    margin: 40px;
+}
+
+#featimg{
+    border-radius: 12px 5px 0 15px;
+}
+
+.data{
+    margin: 80px;
+}
+
+.data h1{
+    font-size: 64px;
+}
+
+.data p{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Contactbutton{
+    background-color: #CDDE61;
+    border-style: solid;
+    border-width: 2px 10px 2px 2px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    height: 348px;
+    color: white;
+    background-color: #1A2130;
+    padding: 30px;
+}
+
+#footer li{
+    list-style: none;
+    line-height: 40px;
+}
+
+#footer-stuff{
+    max-width: 500px;
+    padding: 0 100px;
+}
+
+.text-aboutus{
+    padding: 0 200px 0 200px;
+    font-size: 32px;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
+  font-variation-settings: "slnt" 0;
+}
+
+.inter2 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.inter3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  }
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .poppins2{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .poppins3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @media (max-width: 1480px) {
+    #images-temp {
+        display: none;
+    }
+    .aboutus{
+        justify-content: center;
+    }
+    #visimisi{
+        display: contents;
+        align-items: center;
+    }
+}
