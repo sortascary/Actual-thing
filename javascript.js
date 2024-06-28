@@ -37,3 +37,17 @@ document.addEventListener("DOMContentLoaded", function() {
 function navigateToPage(url) {
     window.location.href = url;
 }
+
+let user = document.getElementById("Name");
+let email = document.getElementById("Email");
+let age = document.getElementById("Message");
+
+function check() {   
+  if (user.value !="" && email.value !="" && age.value !="") {
+
+    alert("Kita akan Email balik dalam 2-6 Hari kerja terimakasih!")
+      
+  } else{
+    alert("isikan semuanya");
+  }
+}
