@@ -1,10 +1,14 @@
 body{
     margin: 0;
     background-color: #E3EDA7;
-    min-width: 480px;
+    min-width: 320px;
  }
  .body-aboutus{
     color: #383838;
+ }
+
+ #navbar{
+    overflow: hidden;
  }
 
 #navbar li {
@@ -15,13 +19,15 @@ body{
     list-style: none;
     display: inline;
     justify-items: center;
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px;
 }
 
 #navbar li:hover{
     cursor: pointer;
 
 }
+
+
  a{
     color: black;
     text-decoration: none;
@@ -95,6 +101,7 @@ body{
 
 #bigimg{
     height: 946px;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -276,7 +283,7 @@ body{
 form {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 300px;
     margin: auto;
     padding: 20px;
     border-radius: 10px;
@@ -407,6 +414,7 @@ textarea {
     }
     .hamburger{
         display: contents;
+        padding: 50px;
     }
     #navbar li:hover{
         cursor: default;
@@ -415,7 +423,10 @@ textarea {
 }
 
 @media (max-width: 767px) {
-
+    .navbar-brand{
+        font-size: 30px;
+        
+    }
     .feature{
         flex-direction: column;
     }
@@ -423,12 +434,27 @@ textarea {
         justify-content: center;
     }
     .feature-item{
-        margin: 5px;
+        margin:  5px;
+        width: 200px;
+        height: 300px;
+    }
+    #featimg{
+        width: 200px;
     }
     .text-aboutus{
         font-size: 24px;
     }
-
+     .mainpart{
+        padding: 0px 20px;
+        margin-right: 0;
+    }
+    #contact-info{
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    #navbar li {
+        padding: 0px 20px;
+    }
 }
 
 @media (max-width: 480px) {
