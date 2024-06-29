@@ -17,6 +17,17 @@ function navstick() {
     }
 }
 
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'flex';
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display = 'none';
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const lazyLoadBg = () => {
         const element = document.getElementById('bigimg');
