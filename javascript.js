@@ -1,10 +1,6 @@
 window.onload = function() {
   navstick();
 };
-window.onscroll = function() {
-  navstick();
-};
-
 let navbar = document.getElementById("navbar");
 
 let sticky = navbar.offsetTop;
