@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+        <link href="Style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav id="navbar" class="navbar">
+            <a class="navbar-brand inter" href="#">Bus of Knowledge</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav sidebar">
+                <li>
+                  <a onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#5f6368"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a>
+                </li>
+                <li >
+                  <a href="#" onclick="navigateToPage('Index_Home.html')">Home</a>
+                </li>
+                <li>
+                  <a href="#" onclick="navigateToPage('Index_Aboutus.html')">About us</a>
+                </li>
+                <li>
+                  <a href="#"  onclick="navigateToPage('Index_Contact.html')">Contact us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav mainpart">
+                <li>
+                  <a class="hidewhensmall navitem" href="#" onclick="navigateToPage('Index_Home.html')">Home</a>
+                </li>
+                <li>
+                  <a class="hidewhensmall navitem" href="#" onclick="navigateToPage('Index_Aboutus.html')">About us</a>
+                </li>
+                <li>
+                  <a class="hidewhensmall navitem" href="#"  onclick="navigateToPage('Index_Contact.html')">Contact us</a>
+                </li>
+                <li>
+                  <a class="hamburger" onclick="showSidebar()" style="margin-left: auto"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#5f6368"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <div  id="bigimg" data-src="asset/Test.jpg">
+          <h1 class="Hero-text inter">Educating the youth, <br><span style="font-size: 48px;">One bus at a time</span></h1>
+        </div>
+
+        <div class="aboutus">
+          <div style="text-align: center; max-width: 986px; margin: 10px;">
+            <h1 class="poppins up" style="font-size: 64px;">Bus of Knowledge</h1>
+            <p class="poppins2 up" style="font-size: 24px;">Pendidikan adalah Hak penting bagi anak muda. Karena pendidikan ialah yang dapat menciptakan masa depan yang lebih baik. Oleh karena itu kita Siap untuk memenuhi kebutuhan edukasi ndonesia</p>
+          </div>
+            <img src="asset/Untitled-2.jpg" class="up" id="images-temp">
+        </div>
+
+        <div class="aboutus">
+          <img src="asset/uhh.jpg" class="up" id="images-temp">
+
+          <div style="text-align: center; max-width: 986px; margin: 10px;">
+            <h1 class="poppins up" style="font-size: 64px;">Tentang kami</h1>
+            <p class="poppins2 up" style="font-size: 24px;">Kita mengerti Bahwa tidak semua murid bisa belajar dengan kualitas yang baik dibanding murid lain maka itu kita berjuang untuk membantu sekolahan mencapaikan kebutuhan itu</p>
+          </div> 
+        </div>
+
+        <div id="containervs">
+          <h1 class="inter3" style="font-size: 64px;margin: 20px;">Visi & Misi kami</h1>
+
+          <div id="visimisi">
+            <div class="visi-misi">
+              <h2 class="poppins3" style="font-size: 48px;">Visi</h2>
+              <div class="popup">
+                  <p class="poppins2">Mewujudkan Indonesia yang cerdas dan berdaya melalui pendidikan inklusif yang inovatif dan berkelanjutan, dengan menghadirkan pembelajaran berkualitas langsung ke komunitas-komunitas yang paling membutuhkan.</p>
+              </div>
+            </div>
+            <div class="visi-misi">
+              <h2 class="poppins3" style="font-size: 48px;">Misi</h2>
+              <div class="popup">
+                  <p class="poppins2">Menghadirkan Knowledge Bus yang menjangkau daerah-daerah terpencil dan pinggiran kota, memastikan semua anak mendapatkan kesempatan belajar yang setara. Karena Pendidikan penting untuk kemajuan!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="containerfeatures">
+
+          <h1 style="font-size: 48px;margin: 100px;">Cara kita mendukung pendidikan</h1>
+          <div class="feature">
+
+            <div class="feature-stay">
+              <div class="feature-item" >
+                <img src="asset/Modern.jpg" id="featimg">
+                <p class="inter3" style="font-size: 32px;">Modernisasi</p>
+              </div>
+              <div class="feature-item" >
+                <img src="asset/online.jpg" id="featimg">
+                <p class="inter3" style="font-size: 32px;">Online course</p>
+              </div>
+            </div>
+            
+
+            <div class="feature-stay">
+
+              <div class="feature-item">
+                <img src="asset/konseling.jpg" id="featimg">
+                <p class="inter3" style="font-size: 32px;">Kounseling</p>
+              </div>
+              <div class="feature-item">
+                <img src="asset/quality.jpg" id="featimg">
+                <p class="inter3" style="font-size: 32px;">peningkat Kualitas</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="visimisi">
+            <div class="data">
+              <h1>5K+</h1>
+              <p>Sekolah terkunjungi</p>
+            </div>
+            <div class="data">
+              <h1>12</h1>
+              <p>Mapel tersedia</p>
+            </div>
+            <div class="data">
+              <h1>100+</h1>
+              <p>Knowledge bus aktif</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display: flex;flex-direction: column; justify-content: center;text-align: center;padding-bottom: 100px;">
+          <p class="inter2" style="font-size: 32px;">What are you waiting for?</p>
+
+          <a href="#"  onclick="navigateToPage('Index_Contact.html')">
+            <button class="Contactbutton inter3" style="font-size: 36px;">Contact us!</button>
+          </a>
+        </div>
+        
+        <div id="footer" class="inter3">
+
+          <div id="footer-stuff" class="stuff"> 
+            <h1 class="inter" style="font-size: 48px;border-bottom: 2px solid;">Bus of Knowledge</h1>
+            <p style="font-size: 20px;">Pendidikan adalah Hak penting bagi anak muda. Karena pendidikan ialah yang dapat menciptakan masa depan yang lebih baik.<br> Oleh karena itu kita Siap untuk memenuhi kebutuhan edukasi Indonesia</p>
+          </div>
+          <div id="footer-stuff">
+            <h1 class="inter" style="font-size: 36px;">Contact info:</h1>
+            <ul>
+              <li>+62813****</li>
+              <li>555-Sendbus</li>
+              <li>Dkaky2008@gmail.com</li>
+              <li>Bussman@yahoo.com</li>
+            </ul>
+          </div>
+          
+          <div>
+
+          </div>
+
+        </div>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
